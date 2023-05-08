@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Container Place-Size */
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+/* Columns */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Columns Design */
+[class*="col-"]{
+    float: left;
+}
+
+/* Rows */
+.row {
+    float: left;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*RWD For Small Screens*/
+@media screen and (max-width:700px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+}
+
+/*RWD Images*/
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* H Tags */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    padding: 40px;
+    font-weight: 700;
+    color: rgb(14, 56, 95);
+    line-height: 35px;
+}
+
+.text {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* Text Uppercase*/
+.text-upper {
+    text-transform: uppercase;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    float: left;
+    background-color: rgb(14, 56, 95);
+}
+
+/* Background Color Green */
+.bg-color-green {
+    background-color: rgb(33, 126, 95)!important;
+}
+
+/* Color Green */
+.color-green {
+    color:rgb(33, 126, 95)!important;
+}
+
+.hr-green {
+    border-color:rgb(33, 126, 95)!important;
+}
+
+/* Background Color Blue*/
+.bg-color-blue {
+    background-color: rgb(39, 179, 179)!important;
+}
+
+/* Color Blue */
+.color-blue {
+    color:rgb(39, 179, 179)!important;
+}
+
+.hr-blue {
+    border-color:rgb(39, 179, 179)!important;
+}
+
+/* Logo */
+.logo {
+    color:white;
+    padding: 30px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    float: left;
+}
+
+/* Navbar */
+.nav-item {
+    color: white;
+    float: right;
+    padding: 40px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.navbar a{
+    color: white!important;
+}
+
+.navbar a:visited{
+    color: white!important;
+}
+
+/* Content */
+.content {
+    width: 100%;
+    padding: 30px;
+}
+
+/* Starline */
+.starline {
+    text-align: center;
+    width: 350px;
+    margin: 0px auto;
+    padding-bottom: 15px;
+    color: rgb(14, 56, 95);
+}
+
+.starline .hr {
+    border: 3px solid rgb(14, 56, 95);
+    border-radius: 5px;
+}
+
+.starline .material-symbols-outlined {
+    position: relative;
+    top: -15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.section-link {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Download Link Button*/
+.download-btn {
+    border:2px solid rgb(14, 56, 95);
+    padding: 20px 30px;
+    border-radius: 5px;
+    color: rgb(14, 56, 95)!important;
+    font-family: 'Lato';
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.download-btn:hover {
+    background-color: rgb(14, 56, 95);
+    color: white!important;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    background-color: rgb(14, 56, 95);
+}
+
+.footer a {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer a:visited {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/* HTML Download Button */
+.html-download-btn {
+    border:2px solid rgb(255, 123, 0);
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: rgb(255, 123, 0)!important;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.html-download-btn .material-symbols-outlined {
+    position: relative;
+    top:5px;
+}
+
+.html-download-btn:hover {
+    background-color: rgb(255, 123, 0);
+    color: white!important;
+}
+
+/* CSS Download Button */
+.css-download-btn {
+    border:2px solid rgb(39, 179, 179);
+    padding: 10px 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: rgb(39, 179, 179)!important;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.css-download-btn .material-symbols-outlined {
+    position: relative;
+    top:5px;
+}
+
+.css-download-btn:hover {
+    background-color: rgb(39, 179, 179);
+    color: white!important;
+}
+
+/* About Us Form */
+.about-us-form {
+    margin: 0px auto;
+    text-align: center;
+    width: 350px;
+}
+
+.about-us-form input, textarea {
+    width: 350px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.about-us-form input:focus {
+    outline: none;
+}
+
+/* Send Button */
+.send-btn {
+    border:2px solid rgb(39, 179, 179);
+    padding: 8px 35px;
+    border-radius: 5px;
+    color: rgb(39, 179, 179)!important;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 400;
+    background-color: white;
+}
+
+.send-btn:hover {
+    background-color: rgb(39, 179, 179);
+    color: white!important;
+}
+
+/* Responsive Codes */
+
+@media screen and (max-width:1000px) {
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .content{
+        margin-bottom: 50px;
+    }
+    
+    .download-btn {
+        padding: 10px 15px;
+        font-size: 22px;
+    }
+}
